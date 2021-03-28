@@ -1,7 +1,7 @@
 import math
 r=float(input(' Enter the radiius of the circle :'))
 a=(math.pi)*r*r
-print('The ares of the circle with radius ',r,' is :',a)
+print('The area of the circle with radius ',r,' is :',a)
 
 #################################################################################
 
