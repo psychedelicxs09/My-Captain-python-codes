@@ -1,0 +1,19 @@
+import math
+r=float(input(' Enter the radiius of the circle :'))
+a=(math.pi)*r*r
+print('The ares of the circle with radius ',r,' is :',a)
+
+#################################################################################
+
+fname=str(input('Enter the file name :'))
+a=0
+for i in range(len(fname)):
+    if fname[i]=='.':
+        if fname[i:]=='.py':
+            print ('The extention of the file is python ')
+            a=1
+    else:
+        continue
+if a==0:
+    print ('The extention of the file is not python ')
+    
