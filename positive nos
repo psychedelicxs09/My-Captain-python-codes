@@ -1,0 +1,11 @@
+n=int(input('Enter size of list :'))
+list1=[]
+for i in range (n):
+    num=int(input('Enter the number :'))
+    list1+=[num]
+print (list1)
+pl=[]
+for i in list1:
+    if int(i)>0:
+        pl+=[i]
+print (pl)    
