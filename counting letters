@@ -1,0 +1,26 @@
+def most_frequent(word):
+    l=list(word)
+    d={}
+    nl=[word[0]]
+    for i in l:
+        if i in nl:
+            continue
+        else:
+            nl+=[i]
+    print (nl)
+    for j in nl:
+        c=word.count(j)
+        d[j]=c
+    print (d)
+    dl=d.values()
+    desl=sorted(dl,reverse=True)
+    print (desl)
+    for i in desl:
+        for j in nl:
+            if d[j]==i:
+                print (j,'=',i)
+                break
+                
+        
+word=str(input('Please enter a string :'))
+most_frequent(word)
